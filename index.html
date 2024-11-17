@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>goit-js-hw-06</Title>
+        <script src="task-1.js"></script>
+        <script src="task-2.js"></script>
+        <script src="task-3.js"></script>
+    </head>
+    <body>
+        <h1>Homework 6</h1>
+        <script>
+            //---------------------------------------------------------Task 1---------------------------------------------------------
+            console.log("------TASK 1------")
+            customer.setDiscount(0.15);
+            console.log(customer.getDiscount()); // 0.15
+            customer.addOrder(5000, "Steak");
+            console.log(customer.getBalance()); // 19750
+            console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+            console.log("")
+                
+            //---------------------------------------------------------Task 2---------------------------------------------------------
+            console.log("------TASK 2------")
+            const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+            console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+            storage.addItem("Droid");
+            console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+            storage.removeItem("Prolonger");
+            console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+            console.log("")
+
+            //---------------------------------------------------------Task 3---------------------------------------------------------
+            console.log("------TASK 3------")
+            const builder = new StringBuilder(".");
+            console.log(builder.getValue()); // "."
+            builder.padStart("^");
+            console.log(builder.getValue()); // "^."
+            builder.padEnd("^");
+            console.log(builder.getValue()); // "^.^"
+            builder.padBoth("=");
+            console.log(builder.getValue()); // "=^.^="
+            console.log("")
+        </script>
+    </body>
+
+</html>
